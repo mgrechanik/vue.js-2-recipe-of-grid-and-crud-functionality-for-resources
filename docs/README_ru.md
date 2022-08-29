@@ -141,6 +141,7 @@ npm run serve
 - ```FilterRow.vue```
 ```
     - шаблон
+	
 	-
 	data: function() {
 		return {
