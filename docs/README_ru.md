@@ -38,7 +38,7 @@
 ## Демо <span id="demo"></span>
 
 Данный **функционал** по умолчанию будет выглядеть так:
-![получившийся функционал grid и crud для ресурса](https://raw.githubusercontent.com/mgrechanik/vue.js-2-recipe-of-grid-and-crud-functionality-for-resources/master/docs/images/grid-and-crud.png" Функционал grid и crud для ресурса")
+![получившийся функционал grid и crud для ресурса](https://raw.githubusercontent.com/mgrechanik/vue.js-2-recipe-of-grid-and-crud-functionality-for-resources/master/docs/images/grid-and-crud.png "Функционал grid и crud для ресурса")
 	
 ---
     
