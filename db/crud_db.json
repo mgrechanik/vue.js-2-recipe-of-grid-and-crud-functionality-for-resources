@@ -1,0 +1,248 @@
+{
+  "omegas": [
+    {
+      "id": 1001,
+      "title": "A sea will reveal the truth",
+      "rating": 7.44
+    },
+    {
+      "id": 1002,
+      "title": "On the road",
+      "rating": 7.55
+    },
+    {
+      "id": 1003,
+      "title": "Hit them where it hurts",
+      "rating": 5.5
+    },
+    {
+      "id": 1004,
+      "title": "Snow piercer",
+      "rating": 8.11
+    },
+    {
+      "id": 1005,
+      "title": "The drowned giant",
+      "rating": 7.5
+    },
+    {
+      "id": 1006,
+      "title": "Screemers",
+      "rating": 7.4
+    },
+    {
+      "id": 1007,
+      "title": "The Comrade",
+      "rating": 5.44
+    },
+    {
+      "id": 1008,
+      "title": "Castaneda journey",
+      "rating": 5.55
+    },
+    {
+      "id": 1009,
+      "title": "Lock and Key",
+      "rating": 7.5
+    },
+    {
+      "id": 1010,
+      "title": "The murder at the sea",
+      "rating": 4.4
+    },
+    {
+      "id": 1011,
+      "title": "Desert murder",
+      "rating": 4.4
+    },
+    {
+      "id": 1012,
+      "title": "Sun runner",
+      "rating": 8.5
+    },
+    {
+      "id": 1013,
+      "title": "Clockwork orange",
+      "rating": 7.555
+    },
+    {
+      "id": 1014,
+      "title": "Invaders business is not ours",
+      "rating": 0
+    },
+    {
+      "id": 1015,
+      "title": "Vertigo",
+      "rating": 6.5
+    },
+    {
+      "id": 1016,
+      "title": "Murder's love",
+      "rating": 8.51
+    },
+    {
+      "id": 1017,
+      "title": "The starts are ours",
+      "rating": 7.7
+    },
+    {
+      "id": 1018,
+      "title": "The Jaws",
+      "rating": 8.5555
+    },
+    {
+      "id": 1019,
+      "title": "The children of dynmoth",
+      "rating": 4.5
+    },
+    {
+      "id": 1020,
+      "title": "Visiters",
+      "rating": 6.9
+    },
+    {
+      "id": 1021,
+      "title": "A journey of Robinzon Crusoe",
+      "rating": 9.1
+    },
+    {
+      "id": 1022,
+      "title": "A journey on a baloon",
+      "rating": 6.1
+    },
+    {
+      "id": 1023,
+      "title": "The lighthouse of the dead people",
+      "rating": 2.7
+    },
+    {
+      "id": 1024,
+      "title": "Bermuda triangle",
+      "rating": 1.1
+    }
+  ],
+  "profiles": [
+    {
+      "id": 2001,
+      "title": "Judge",
+      "gender": 3,
+      "number": "1001-1001-1002",
+      "rating": ""
+    },
+    {
+      "id": 2002,
+      "title": "Rooster",
+      "gender": 3,
+      "number": "1002-1002-1002"
+    },
+    {
+      "id": 2003,
+      "title": "Jester",
+      "gender": 2,
+      "number": "1003-1003-1003"
+    },
+    {
+      "id": 2004,
+      "title": "Little Cobra",
+      "gender": 2,
+      "number": "1004-1004-1004",
+      "rating": ""
+    },
+    {
+      "id": 2005,
+      "title": "Commando",
+      "gender": 3,
+      "number": "1005-1005-1005"
+    },
+    {
+      "id": 2006,
+      "title": "Snake Eyes",
+      "gender": 3,
+      "number": "1006-1006-1006"
+    },
+    {
+      "id": 2007,
+      "title": "Sofa King",
+      "gender": 3,
+      "number": "1007-1007-1007"
+    },
+    {
+      "id": 2008,
+      "title": "Marshmallow",
+      "gender": 2,
+      "number": "1008-1008-1008"
+    },
+    {
+      "id": 2009,
+      "title": "Crash Test",
+      "gender": 2,
+      "number": "1009-1009-1009"
+    },
+    {
+      "id": 2010,
+      "title": "Seaman",
+      "gender": 3,
+      "number": "1010-1010-1010"
+    },
+    {
+      "id": 2011,
+      "title": "Mr. Lucky",
+      "gender": 2,
+      "number": "1011-1011-1011"
+    },
+    {
+      "id": 2012,
+      "title": "Mr. Sir",
+      "gender": 3,
+      "number": "1012-1012-1012"
+    },
+    {
+      "id": 2013,
+      "title": "Toolmaker",
+      "gender": 2,
+      "number": "1013-1013-1013"
+    },
+    {
+      "id": 2014,
+      "title": "Esquire",
+      "gender": 2,
+      "number": "1014-1014-1014"
+    },
+    {
+      "id": 2015,
+      "title": "Nacho",
+      "gender": 3,
+      "number": "1015-1015-1015"
+    },
+    {
+      "id": 2016,
+      "title": "Twitch",
+      "gender": 3,
+      "number": "1016-1016-1016"
+    },
+    {
+      "id": 2017,
+      "title": "Osprey",
+      "gender": 3,
+      "number": "1017-1017-1017"
+    },
+    {
+      "id": 2018,
+      "title": "Zod",
+      "gender": 3,
+      "number": "1018-1018-1018"
+    },
+    {
+      "id": 2019,
+      "title": "Fast Draw",
+      "gender": 3,
+      "number": "1019-1019-1019"
+    },
+    {
+      "id": 2020,
+      "title": "Turnip King",
+      "gender": 3,
+      "number": "1020-1020-1020"
+    }
+  ]
+}
