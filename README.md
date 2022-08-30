@@ -42,40 +42,40 @@ The **functionality** by default will look like this:
 	
 ---
     
-## Установка демо <span id="installing"></span>
+## Installing demo  <span id="installing"></span>
 
-Клонируйте репозитарий
+Clone the repository
 
 ```
 git clone git@github.com:mgrechanik/vue.js-2-recipe-of-grid-and-crud-functionality-for-resources.git
 ```
 
-Выполните
+Run
 ```
 npm install
 ```
 
-Запускаем RestAPI с базой для нашего приложения
+Launch the RestAPI with database for our application
 ```
 json-server --watch ./db/crud_db.json
 ```
 
-Это даст нам два ресурса по следующим адресам:
+It will give us two resources with the next addresses:
 
 ```
   Resources
   http://localhost:3000/omegas
   http://localhost:3000/profiles
 ```
-> Если у вас адреса будут другие , настройте их в ```_moduleSettings.js``` у каждого модуля, подробности ниже.
+> If your addresses are different change them in the ```_moduleSettings.js``` of every module, details later.
 
-Запускайте приложение
+Run the application
 
 ```
 npm run serve
 ```
 
-Теперь вы будете видеть соответствующие grid-ы с crud функционалом
+Now you will see pages with grid and crud functionality for tho models - **omega** and **profile**
 
 ---
 

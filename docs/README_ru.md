@@ -46,7 +46,7 @@
     
 ## Установка демо <span id="installing"></span>
 
-Клонируйте репозитарий
+Клонируйте репозиторий
 
 ```
 git clone git@github.com:mgrechanik/vue.js-2-recipe-of-grid-and-crud-functionality-for-resources.git
