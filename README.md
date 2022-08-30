@@ -1,4 +1,4 @@
-# Recipe how to build Grid and CRUD dunctionality over resource in Vue,js 2 application
+# Recipe how to build Grid and CRUD functionality over resource in Vue.js 2 application
 
 [Русская версия](docs/README_ru.md)
 
@@ -81,33 +81,33 @@ Now you will see pages with grid and crud functionality for tho models - **omega
 
 ## Explanation of structure  <span id="explanation"></span> 
 
-В деталях сборки вы можете ознакомиться в рабочем demo примере.
+The details of the structure of this recipe you can see in the demo example.
 
-Основные моменты такие:
+The main concepts are:
 
-1) Функционал относительно **vuex** части модуля располагается в ```src/store/имяМодуля.js```.
+1) The functionality about **vuex** part of the module resides in ```src/store/moduleName.js```.
 
-Функционал компонентов модуля располагается в ```src/components/crud/имяМодуля/```.
+The functionality of the module components resides in ```src/components/crud/moduleName/```.
 
-2) В сборке присутствует модуль **omega** - это базовый модуль, от которой наследуется весь функционал.
+2) We have **omega** module who is the base module from who we inherit our functionality.
 
-Этот модуль должен присутствовать в вашей сборке, скопируйте его себе. На базе него будем создавать уже свои.
+You need to have this module, copy it to your project. Based on it we will create our own modules.
 
-3) Модуль **profile** в сборке - как раз пример как можно создать свой собственный модуль, отнаследовав ее от соответствующего функционала **omega**.
+3) **profile** module is the example of building your own module by inhereting from **omega** module.
 
 
-### Список шагов, необходимых для создания своей модели и модуля для нее  <span id="steps"></span>
+### The list of steps needed to create your own module <span id="steps"></span>
 
-Допустим, мы назовем нашу модель **zeta** , и соответствующий модуль также.
+Lets call both our new model and modele a **zeta**
 
-1) копируем ```components/crud/profile``` в ```components/crud/zeta```
+1) copy ```components/crud/profile``` в ```components/crud/zeta```
 
-2) Часть, касаемая vuex модуля (каталог src/store)
+2) vuex part of the module (directory src/store)
 
-    - ```profile.js``` копируем в ```zeta.js```
-	   * В ```zeta.js```
-	     - меняем на свои колонки фильтровки и сортировки (те, по которым в новой модели требуется)
-	- добавляем в ```store/index.js```
+    - ```profile.js``` copy to ```zeta.js```
+	   * At ```zeta.js```
+	     - change filter and sorting columns (ones we need)
+	- add to ```store/index.js```
 	```
 		import zeta from './zeta'
 		import * as ZETA_SETTINGS from '@/components/crud/zeta/_moduleSettings';
@@ -121,15 +121,15 @@ Now you will see pages with grid and crud functionality for tho models - **omega
 		}
 		```
 		
-3) меняем в каталоге ```components/crud/zeta```
+3) changes in the directory ```components/crud/zeta```
 
 - ```_moduleSettings.js```
-  - настройки для данной модели (подробно объяснены в самом файле)
+  - settings for this model (details in the file itself)
   
 - ```EditForm.vue```
 ```
-  - свои колонки
-    - шаблон
+  - your columns
+    - template
 	- 
 	data: function() {
 			return {
@@ -138,7 +138,7 @@ Now you will see pages with grid and crud functionality for tho models - **omega
 		
 - ```FilterRow.vue```
 ```
-    - шаблон
+    - template
 	
 	-
 	data: function() {
@@ -148,34 +148,35 @@ Now you will see pages with grid and crud functionality for tho models - **omega
 
 		
 - ```GridView.vue```
-  - шаблон
+  - template
 
 - ```TitleAndSortRow.vue```
 ```
-   - шаблон
+   - template
    -
 	data: function() {
 		return {
 			sort: {    
 ```
 
-- Инициализацию добавить 
-  - в App.vue
+- You need to add the initialisation 
+  - at App.vue
   ```
     this.$store.dispatch("zeta/initializeAction", this.$store);    
     this.$store.dispatch("zeta/setPageAction", 1);     
   ```	
-  - или во вьюхе у роутера
+  - or in the router's view
   
-4) Добавляем эти компоненты на нужные страницы, пример как в роутере подключили, смотри в Демо.  
+4) Add these components to the pages needed, see the router part in the example.
 
-### Возможности по расширению  <span id="extending"></span>
+### Extending possibilities  <span id="extending"></span>
 
-По модулю **profile** вы можете видеть что создавая свой модуль на основе базового - **omega** - мы в основном
-решали задачи по:
-- настройке модуля в ```_moduleSettings```
-- настройке колонок
-- изменению шаблонов в компонентах
+With the **profile** module you can see that creating it by inhereting of base module - **omega** - we solved next
+main tasks:
+- module settings ```_moduleSettings```
+- setting your columns
+- change component's templates
 
-Логику в компонентах менять не потребовалось, но в этом также нет проблем, компоненты наследуются по правилам **Vue** с соответствующими
-возможностями переопределения, также ничто не мешает использовать свои собственные компоненты.
+We did not need to chage component's logic, though there are no problems with it, components are extenging one another according **Vue** rules,
+and logic could be overridden.
+Also you can use your own components.
