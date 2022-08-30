@@ -29,7 +29,7 @@ This recipe shows the plan with which you can build the following functionality:
 	  * filtering row allows to set the condition for models to be seen with function of validation of these filter values
 	  * informational tip about amount of shown and found models
 	  * pagination to move to the page you need (data is cached, if you loaded page already, it will be taken from cache)
-    * Technically module state to serve for our model is kept in the separate **VUEX** module
+    * Technically module state to serve for our module is kept in the separate **VUEX** module
 	* ```CRUD``` makes model managing form to be shown and we can delete model 
 	* Everything is easy to be changed for new requirements
 
@@ -67,7 +67,7 @@ It will give us two resources with the next addresses:
   http://localhost:3000/omegas
   http://localhost:3000/profiles
 ```
-> If your addresses are different change them in the ```_moduleSettings.js``` of every module, details later.
+> If your addresses are different then set them in the ```_moduleSettings.js``` of every module, details later.
 
 Run the application
 
@@ -98,9 +98,9 @@ You need to have this module, copy it to your project. Based on it we will creat
 
 ### The list of steps needed to create your own module <span id="steps"></span>
 
-Lets call both our new model and modele a **zeta**
+Lets call both our new model and module a **zeta**
 
-1) copy ```components/crud/profile``` в ```components/crud/zeta```
+1) copy ```components/crud/profile``` to ```components/crud/zeta```
 
 2) vuex part of the module (directory src/store)
 
@@ -159,7 +159,7 @@ Lets call both our new model and modele a **zeta**
 			sort: {    
 ```
 
-- You need to add the initialisation 
+- You need to add the initialization 
   - at App.vue
   ```
     this.$store.dispatch("zeta/initializeAction", this.$store);    
@@ -171,12 +171,12 @@ Lets call both our new model and modele a **zeta**
 
 ### Extending possibilities  <span id="extending"></span>
 
-With the **profile** module you can see that creating it by inhereting of base module - **omega** - we solved next
+With the **profile** module you can see that creating it by inhereting of base module - **omega** - we were soling next
 main tasks:
-- module settings ```_moduleSettings```
+- changing module settings at ```_moduleSettings```
 - setting your columns
-- change component's templates
+- changing component's templates
 
-We did not need to chage component's logic, though there are no problems with it, components are extenging one another according **Vue** rules,
+We did not need to change component's logic, though there are no problems with it, components are extenging one another according **Vue** rules,
 and logic could be overridden.
 Also you can use your own components.
