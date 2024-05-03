@@ -75,7 +75,7 @@ Run the application
 npm run serve
 ```
 
-Now you will see pages with grid and crud functionality for tho models - **omega** and **profile**
+Now you will see pages with grid and crud functionality for two models - **omega** and **profile**
 
 ---
 
